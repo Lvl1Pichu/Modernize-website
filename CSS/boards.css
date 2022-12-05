@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(229, 229, 247);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.ram {
+    border: 1px solid rgb(147, 169, 211);
+    background-color: rgb(205, 217, 239);
+}
+
+.footerram {
+    border: 1px solid rgb(147, 169, 211);
+    background-color: rgb(205, 217, 239);
+}
+
+.trad-knapp {
+    background-color: rgb(108, 126, 159);
+    color: white;
+}
+
+.knapp {
+    background-color: rgb(108, 126, 159);
+    color: white;
+}
+
+.datum-text {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

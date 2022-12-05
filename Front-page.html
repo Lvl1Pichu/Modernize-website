@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4chan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://kit.fontawesome.com/d68ed4da9b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!--Headern är en Navbar som syns på sidan oavsett vart man skrollar. Vad vi ville visa var ett enklare sätt att 
+söka upp forum, posts, eller skapa en sökmotor där man lätt kan söka nyckelord. Eftersom 4chan är anonym behöver vi 
+inte tänka på profil, dropdown för profilen eller inställningar, då sidan är lika för alla.-->
+<header>
+        <div class="header-container">
+            <div class="left-header">
+                <div class="fade-in-image">
+                <img id="chan-img" alt="4chan" src="/Img/4chan logo transparent.png" height="40px" width="100px">
+                </div>
+                <div class="searchbar-header">
+                    <div class="searchbar-header-2">
+                        <div class="searchbar-header-3">
+                            <form action="search" class="searchbar-form">
+                                <label></label>
+                              <input class="searchbar" type="search" placeholder="Search 4chan">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="right-header">
+                <div class="dropdown-header">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+</header>
+
+
+<!-- Börjar med 3 olika knappar som med funktionalitet ska sortera från start-hemsidan till dagens populära posts,
+användarens historik samt nya posts. Ingen funtkionallitet vi kunde skapa då vi bara ska göra 2 sidor.-->
+<main>
+    
+        <div class="gap-2 d-inline-flex justify-content-md-start button-container">
+            <div>
+                <button class="btn btn-outline-success" type="button">Home</button>
+            </div>
+            <div>
+                <button class="btn btn-outline-success" type="button">Popular</button>
+            </div>
+            <div>
+                <button class="btn btn-outline-success" type="button">New</button>
+            </div>
+            <div>
+                <button class="btn btn-outline-success" type="button">Recently visited</button>
+            </div>
+        </div>
+
+<!--Sidebar finns för att visa content som är populärt under den senaste månaden, eller forum som får mycket trafik
+just nu. Gör det lätt för användaren att hitta content som de kommer konsumera.-->
+    
+<div class="main-content">
+    <div class="sidebar">
+            <div>
+                <div class="sidebar-title">
+                <h6>Top Recent Boards</h6>
+                </div>
+                <div class="sidebar-under-title" >
+                <ol class="top-recent-boards-list">
+                <li class="sidebar-content">/r/ - Technology
+                    <a href="boards.html" style="border-bottom: none; color: #28A745">
+                    <button class="btn btn-outline-success link-button">Post</button>
+                    </a>
+                </li>
+                <li class="sidebar-content">/na/ - Nature & Animals
+                    <button class="btn btn-outline-success">Post</button>
+                </li>
+                <li class="sidebar-content">/fa/ - Fashion
+                    <button class="btn btn-outline-success">Post</button>
+                </li>
+                <li class="sidebar-content">/mu/ - Music
+                    <button class="btn btn-outline-success">Post</button>
+                </li>
+                <li class="sidebar-content">/lit/ - Literature
+                    <button class="btn btn-outline-success">Post</button>
+                </li>
+            </ol>
+            </div> 
+        </div>
+    </div>
+          
+<!--Container som förklarar vad 4chan är för något.-->
+            
+<div class="chan-1">
+    <div class="chan-1-container title">
+        <h5 class="container-title">What is 4chan?</h5>
+    </div>
+    <div class="chan-1-text-container">
+                4chan is a simple image-based bulletin board where anyone can post comments and share images. There are boards dedicated to a variety of topics, from Japanese animation and culture to videogames, music, and photography. 
+                Users do not need to register an account before participating in the community. 
+                Feel free to click on a board below that interests you and jump right in! <br> <br>
+                Be sure to familiarize yourself with the <span style="border-bottom: 1px solid #800 ;">Rules</span> before posting, and read the <span style="border-bottom: 1px solid #800 ;">FAQ</span> if you wish to learn more about how to use the site.
+    </div>
+</div>
+
+    <!--Sidans klassiska samling av alla de mest besökta forumen. På standardhemsidan kan man själv bestämma
+    sortering och lägga till/ta bort forum vid behov. Vi tog bort NSFW-biten. -->
+        
+        <div class="chan-2">          
+            <div class="chan-2-container title">
+                <h5 class="container-title">Boards</h5>
+                <div class="chan-2-filter"></div>
+            </div>
+            <div class="chan-2-board-container">
+            <div class="chan-2-row-container">
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Japanese culture</h3> <ul><li>Anime & Manga Anime/Cute Anime/wallpapers Mecha Cosplay & EGL Cute Male <br>Flash <br> Transportation <br> Otaku Culture <br> Virtual YouTubers</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Video games</h3><ul><li>
+                        Video Games
+                        Video Game Generals
+                        Video Games/Multiplayer
+                        Video Games/Mobile
+                        Pokémon
+                        Retro Games
+                        Video Games/RPG
+                        Video Games/Strategy</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small; ">Interests</h3><ul><li>
+                        Comics & Cartoons
+                        Technology
+                        Television & Film
+                        Weapons
+                        Auto
+                        Animals & Nature
+                        Traditional Games
+                        Sports
+                        Extreme Sports
+                        Professional Wrestling
+                        Science & Math
+                        History & Humanities
+                        International
+                        Outdoors
+                        Toys</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Creative</h3><ul><li>
+                        Oekaki
+                        Papercraft & Origami
+                        Photography
+                        Food & Cooking
+                        Artwork/Critique
+                        Wallpapers/General
+                        Literature
+                        Music
+                        Fashion
+                        3DCG
+                        Graphic Design
+                        Do-It-Yourself
+                        Worksafe GIF
+                        Quests</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Other</h3><ul><li>
+                        Business & Finance
+                        Travel
+                        Fitness
+                        Paranormal
+                        Advice
+                        LGBT
+                        Pony
+                        Current News
+                        Worksafe Requests
+                        Very Important Posts</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Misc</h3><ul><li>
+                        Random
+                        ROBOT9001
+                        Politically Incorrect
+                        International/Random
+                        Cams & Meetups
+                        Shit 4chan Says</li></ul></div>
+                    <div class="column"> <h3 style="text-decoration: underline; display: inline; font-size: small;">Cooking</h3><ul><li>
+                        Recipes <br>
+                        Vegan cooking <br>
+                        Home gardens <br>
+                        Grilling <br>
+                        Advice <br>
+                        Cooking pictures <br>
+                        Beginner tips <br>
+                        </li></ul></div>
+                </div>
+            </div>
+        </div>
+
+<!--Karusell med post-bilder från forum som kan vara relevant för användaren, följda forum, eller tidigare besökta forum.
+Temat är att användaren lätt ska kunna hitta sådant som de sökt på innan, eller få förslag på content som andra
+användare interragerar med.-->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/Img/Technology img.jpg" alt="First slide">
+                <div class="carousel-content">
+                    <a href="boards.html" class=""><h2>/R/ - Technology</h2></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/Img/Animals-Nature.jpg" alt="Second slide">
+                <div class="carousel-content">
+                    <h2>/an/ - Animals & Nature</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/Img/LGBTQ img.jpg" alt="Third slide">
+                <div class="carousel-content">
+                    <h2>/LGBTQ/ - LGBTQ</h2>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+<!--4chan har i alla år fört statstik över mängden data, användare och hur många posts det finns på sidan.
+Vi har inte kunskapen att göra denna fungerande, men finnas ska den allt.-->
+
+        <div class="stats-container">
+            <div class="footer-title">
+                <h6 class="container-title">Stats</h6>
+            </div>
+            
+            <div class="stats">
+                <div>
+                    <span style="color: #800;"><span style="font-weight: bold;">Total posts:</span> 4,225,650,653</span>
+                </div>
+                <div>
+                    <span style="color: #800;"><span style="font-weight: bold;">Current users:</span> 231,684</span>
+                </div>
+                <div>
+                    <span style="color: #800;"><span style="font-weight: bold;">Active content:</span>1230 GB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footerram pt-3">
+        <p class="text-center" style="font-size: 11px">All trademarks and copyrights on this page are owned by their respective parties. Images uploaded are the responsibility of the Poster. Comments are owned by the Poster.</p>
+          <p class="text-center" style="font-size: 11px">About • Feedback • Legal • Contact</p>
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
